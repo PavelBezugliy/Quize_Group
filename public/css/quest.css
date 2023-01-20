@@ -1,0 +1,15 @@
+.quest {
+    width: auto;
+    margin-bottom: 25%;
+}
+
+.buttonverify {
+    border-radius: 10px;
+    width: auto;
+    background-color: blueviolet;
+    margin-left: 10px;
+}
+
+.inputAnsver {
+    border-radius: 10px;
+}
