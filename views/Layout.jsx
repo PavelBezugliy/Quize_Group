@@ -7,8 +7,9 @@ module.exports = function Layout({ title, children }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <title>{title}</title>
         <link rel="stylesheet" href="/css/layout.css" />
+        <link rel="stylesheet" href="/css/home.css" />
+        <link rel="stylesheet" href="/css/quest.css" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -20,6 +21,8 @@ module.exports = function Layout({ title, children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Lobster&display=swap" rel="stylesheet" />
+        <script defer src="/scrypts/quest.js" />
+        <title>{title}</title>
       </head>
       <body>
         <Header />
