@@ -1,0 +1,14 @@
+
+.theme {
+    display: flex;
+    flex-direction: column;
+}
+
+.button1,
+.button2,
+.button3 {
+    border-radius: 10px;
+    margin: 0.5em;
+    background-color: blueviolet;
+    width: 300px;
+}
