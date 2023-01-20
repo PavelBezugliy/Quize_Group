@@ -23,6 +23,8 @@ if (registration) {
       }),
     });
     const data = await res.json();
+    console.log(data);
+    window.location.assign('/auth/log');
     document.querySelector('message').innerHTML = data.message;
   });
 }
@@ -45,7 +47,8 @@ if (loginization) {
       }),
     });
     const data = await res.json();
-    if (data.message === 'ok') {
+    console.log(data.error);
+    if (data.error === 'ok') {
       window.location.assign('/');
     }
     loginError.innerHTML = data.error;

@@ -16,7 +16,7 @@ module.exports = function Layout({ title, children }) {
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossOrigin="anonymous"
         />
-        <script defer src="/scripts/client.js" />
+        <script defer src="/scrypts/client.js" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />

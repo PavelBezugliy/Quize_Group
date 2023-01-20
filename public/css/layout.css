@@ -2,7 +2,14 @@
     font-family: 'Lobster', cursive;
 }
 /*вот тут начинается фон*/
-
+.them{
+  display: flex;
+  justify-content: center;
+}
+.button4{
+  justify-content: center;
+  margin-top: 1em;
+}
 html {
     height:100%;
   }
@@ -31,7 +38,10 @@ html {
   .bg3 {
     animation-duration:5s;
   }
-  
+  /* .answerDiv{
+    margin-bottom: 10px;
+    font-size: 30px;
+  } */
   .content {
     background-color:rgba(255,255,255,.8);
     border-radius:.25em;

@@ -4,7 +4,7 @@ const Layout = require('./Layout')
 module.exports = function Reg({ title }) {
   return (
     <Layout title={title}>
-      <h2>Reg</h2>
+      <h2 className='testone'>Reg</h2>
       <form action="/auth/reg" method="post" id="reg_form">
       <link rel="stylesheet" href="/css/reg.css" />
       <div class="divReg">
