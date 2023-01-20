@@ -16,11 +16,10 @@ const router = require('express').Router();
 //   }
 // ]
 
-
-const Main = require('../views/Home');
+const Home = require('../views/Home');
 
 router.get('/', (req, res) => {
-  res.renderComponent(Main, { title: 'Quizeee' });
+  res.renderComponent(Home, { title: 'Quizeee' }, { doctype: true });
 });
 
 module.exports = router;
