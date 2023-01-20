@@ -1,19 +1,34 @@
 const React = require('react');
 const Layout = require('./Layout')
 
-function Reg({ title }) {
+module.exports = function Reg({ title }) {
   return (
     <Layout title={title}>
+      <h2>Reg</h2>
+      <form action="/auth/reg" method="post" id="reg_form">
       <link rel="stylesheet" href="/css/reg.css" />
       <div class="divReg">
         <div className='choise'>Пожалуйста, пройдите регистрацию =></div>
         <div className='theme'>
-          <input className="inputName" placeholder='введите ваше имя' />
-          <input className="inputPass" placeholder='введите пароль' />
-          <a className='buttonReg' href=''> <button className='button5' type='button'>Зарегистрироваться</button></a></div>
+          <input 
+          name = "name"
+          type="text"
+          className="inputName" 
+          placeholder='введите ваше имя'
+          required 
+          />
+          <input 
+          name = "password"
+          type ="password"
+          className="inputPass" 
+          placeholder='введите пароль' 
+          required 
+          />
+          <a className='buttonReg' href=''> </a></div>
+          <button className='button5' type='submit'>Зарегистрироваться</button>
       </div>
+      </form>
     </Layout>
-  )
-}
+  );
+};
 
-module.exports = Reg;

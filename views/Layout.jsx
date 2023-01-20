@@ -2,7 +2,7 @@ const React = require('react');
 const Header = require('./Header');
 
 // eslint-disable-next-line react/prop-types
-function Layout({ title, children }) {
+module.exports = function Layout({ title, children }) {
   return (
     <html lang="en">
       <head>
@@ -15,18 +15,19 @@ function Layout({ title, children }) {
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossOrigin="anonymous"
         />
+        <script defer src="/scripts/client.js" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Lobster&display=swap" rel="stylesheet" />
       </head>
       <body>
         <Header />
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
+        <div className="bg" />
+        <div className="bg bg2" />
+        <div className="bg bg3" />
         {children}
       </body>
     </html>
   );
-}
-module.exports = Layout;
+};
