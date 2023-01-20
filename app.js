@@ -5,6 +5,7 @@ const path = require('path');
 const logger = require('morgan');
 const ssr = require('./middleware/ssr');
 
+const helloRoute = require('./routes/hello.route');
 const mainRoute = require('./routes/main.route');
 const questRoute = require('./routes/quest.route');
 const authRoute = require('./routes/auth.route');
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/hello', helloRoute);
 app.use('/', mainRoute);
 app.use('/quest', questRoute);
 app.use('/auth', authRoute);

@@ -29,7 +29,7 @@ router.post('/1/:id', async (req, res) => {
     if (questions.Questions[Number(req.params.id) - 1].answer === req.body.answer) {
       answer = 'Правильно!';
     } else {
-      answer = `Не правильно! правильнвй ответ ${questions.Questions[Number(req.params.id) - 1].answer}`;
+      answer = `Не правильно! правильнвй ответ: ${questions.Questions[Number(req.params.id) - 1].answer}`;
     }
     console.log(answer);
     res.renderComponent(Quest, { question: questions.Questions[Number(req.params.id) + 1], answer }, { doctype: false });

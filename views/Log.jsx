@@ -4,11 +4,11 @@ const Layout = require('./Layout');
 module.exports = function Log({ title }) {
   return (
     <Layout title={title}>
-      <h2>Login</h2>
+      <h2 className='testone'>Login</h2>
       <form action="/auth/log" method="post" id="log_form">
         <link rel="stylesheet" href="/css/log.css" />
         <div className="divLog">
-          <div className="">Введите ваши данные</div>
+          <div className="testY">Введите ваши данные</div>
           <div className="them">
             <input
               name="name"
