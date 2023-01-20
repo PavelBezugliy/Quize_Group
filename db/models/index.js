@@ -5,6 +5,8 @@ const process = require('process');
 
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
+// const config = require(__dirname + '/../dbconfig.json')[env];
+// Я бы так сделала путь, не помню, чтобы дирнейм брали в фигурные скобки (Таня)
 const config = require(`${__dirname}/../config/database.json`)[env];
 const db = {};
 
