@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Question extends Model {
     static associate(models) {
-      Question.Task = Question.this.belongsTo(models.Task, { foreignKey: 'task_id' });
+      this.belongsTo(models.Task, { foreignKey: 'task_id' });
     }
   }
   Question.init({
@@ -24,10 +24,6 @@ module.exports = (sequelize, DataTypes) => {
         model: 'Task',
         key: 'id',
       },
-    },
-    point: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
     },
   }, {
     sequelize,

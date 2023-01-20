@@ -20,6 +20,7 @@ function Layout({ title, children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Lobster&display=swap" rel="stylesheet" />
         <script defer src="/scrypts/quest.js" />
+        <script defer src="/scrypts/question.js" />
         <title>{title}</title>
       </head>
       <body>
