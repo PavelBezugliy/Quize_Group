@@ -25,10 +25,6 @@ module.exports = (sequelize, DataTypes) => {
         key: 'id',
       },
     },
-    point: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
   }, {
     sequelize,
     modelName: 'Question',

@@ -1,25 +1,15 @@
 const router = require('express').Router();
 
-// const questions = [
-//   {
-//     title: 'vova',
-//     quest: 'kto vova',
-//     answer: 'lox',
-//   }
-// ]
-
-// const questionsOne = [
-//   {
-//     title: 'pasha',
-//     quest: 'kto pasha',
-//     answer: 'top',
-//   }
-// ]
-
 const Home = require('../views/Home');
+const { Task } = require('../db/models');
 
-router.get('/', (req, res) => {
-  res.renderComponent(Home, { title: 'Quizeee' }, { doctype: true });
+router.get('/', async (req, res) => {
+  try {
+    const thems = await Task.findAll();
+    res.renderComponent(Home, { title: 'Quizeee', thems }, { doctype: true });
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 module.exports = router;

@@ -8,7 +8,6 @@ document.querySelector('.theme').addEventListener('click', async (e) => {
     },
   });
   const data = await res.text();
-  console.log(data);
   document.querySelector('.content').style.display = 'none';
   document.querySelector('.content').insertAdjacentHTML('beforebegin', data);
 });
